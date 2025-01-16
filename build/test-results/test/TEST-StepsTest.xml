@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="StepsTest" tests="2" skipped="0" failures="1" errors="0" timestamp="2025-01-16T11:33:45" hostname="DESKTOP-9S7F8F1" time="6.794">
+<testsuite name="StepsTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2025-01-16T13:19:24" hostname="DESKTOP-9S7F8F1" time="0.121">
   <properties/>
-  <testcase name="testIssueSearch()" classname="StepsTest" time="6.649"/>
-  <testcase name="testAnnotatedStep()" classname="StepsTest" time="0.046">
-    <failure message="java.lang.VerifyError: Expecting a stackmap frame at branch target 24&#10;Exception Details:&#10;  Location:&#10;    WebStepsTest.openMainPage()V @9: invokestatic&#10;  Reason:&#10;    Expected stackmap frame at this location.&#10;  Bytecode:&#10;    0000000: b200 802a 2ab8 0086 4cb8 008c 2bb6 0090&#10;    0000010: 1207 b800 09a7 000d 4db8 008c 2cb6 0094&#10;    0000020: 2cbf b800 8cb6 0097 b1                 &#10;  Exception Handler Table:&#10;    bci [9, 24] =&gt; handler: 24&#10;" type="java.lang.VerifyError">java.lang.VerifyError: Expecting a stackmap frame at branch target 24
+  <testcase name="testAnnotatedStep()" classname="StepsTest" time="0.121">
+    <failure message="java.lang.VerifyError: Expecting a stackmap frame at branch target 58&#10;Exception Details:&#10;  Location:&#10;    WebStepsTest.searchForRepository()V @9: invokestatic&#10;  Reason:&#10;    Expected stackmap frame at this location.&#10;  Bytecode:&#10;    0000000: b200 9c2a 2ab8 0088 4cb8 008e 2bb6 0092&#10;    0000010: 1211 b800 13b9 0017 0100 121c b800 1304&#10;    0000020: bd00 1e59 0312 2053 b900 2202 0012 1cb8&#10;    0000030: 0013 b900 2601 00a7 000d 4db8 008e 2cb6&#10;    0000040: 0096 2cbf b800 8eb6 0099 b1            &#10;  Exception Handler Table:&#10;    bci [9, 58] =&gt; handler: 58&#10;" type="java.lang.VerifyError">java.lang.VerifyError: Expecting a stackmap frame at branch target 58
 Exception Details:
   Location:
-    WebStepsTest.openMainPage()V @9: invokestatic
+    WebStepsTest.searchForRepository()V @9: invokestatic
   Reason:
     Expected stackmap frame at this location.
   Bytecode:
-    0000000: b200 802a 2ab8 0086 4cb8 008c 2bb6 0090
-    0000010: 1207 b800 09a7 000d 4db8 008c 2cb6 0094
-    0000020: 2cbf b800 8cb6 0097 b1                 
+    0000000: b200 9c2a 2ab8 0088 4cb8 008e 2bb6 0092
+    0000010: 1211 b800 13b9 0017 0100 121c b800 1304
+    0000020: bd00 1e59 0312 2053 b900 2202 0012 1cb8
+    0000030: 0013 b900 2601 00a7 000d 4db8 008e 2cb6
+    0000040: 0096 2cbf b800 8eb6 0099 b1            
   Exception Handler Table:
-    bci [9, 24] =&gt; handler: 24
+    bci [9, 58] =&gt; handler: 58
 
 	at StepsTest.testAnnotatedStep(StepsTest.java:51)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -23,19 +24,7 @@ Exception Details:
 </failure>
   </testcase>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[[Test worker] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
-[Test worker] INFO com.codeborne.selenide.impl.FileHelper - Creating folder: C:\Users\Alisa\IdeaProjects\HW10\build\downloads\1737027225662_11796_1
-янв. 16, 2025 2:33:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 131
-янв. 16, 2025 2:33:47 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 131.0.6778.265. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.19.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - BrowserName=chrome Version=131.0.6778.265 Platform=windows
-[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide v. 7.2.3
-[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenium WebDriver v. 4.19.1 build revision: abe0ee07dc
-[Test worker] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Created webdriver in thread 1: ChromeDriver -> ChromeDriver: chrome on windows (6649f93ccdeb8758dcb526d628c3e240), downloadsFolder: C:\Users\Alisa\IdeaProjects\HW10\build\downloads\1737027225662_11796_1
-[Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Register WebDriverInstance[config=StaticConfig, webDriver=ChromeDriver: chrome on windows (6649f93ccdeb8758dcb526d628c3e240), proxy=null, downloadsFolder=C:\Users\Alisa\IdeaProjects\HW10\build\downloads\1737027225662_11796_1] in 1 [size=1]
-[Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Add shutdown hook in 1 [size=1]
-AspectJ Internal Error: unable to add stackmap attributes to class 'WebStepsTest'. Unsupported class file major version 67
+  <system-err><![CDATA[AspectJ Internal Error: unable to add stackmap attributes to class 'WebStepsTest'. Unsupported class file major version 67
 java.lang.IllegalArgumentException: Unsupported class file major version 67
 	at aj.org.objectweb.asm.ClassReader.<init>(ClassReader.java:199)
 	at aj.org.objectweb.asm.ClassReader.<init>(ClassReader.java:180)

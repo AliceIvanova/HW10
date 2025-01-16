@@ -37,9 +37,11 @@ public class WebStepsTest {
   @Step("Проверяем наличие Issue")
   public void nameOfIssue(){
     $(containerText).shouldHave(Condition.text(wlc));
+    attachScreenshot();
   }
+
   @Attachment(value = "Screenshot", type = "image/png", fileExtension = "png")
-  public byte[] takeScreenshot() {
+  public byte[] attachScreenshot() {
     return ((TakesScreenshot) WebDriverRunner.getWebDriver()).getScreenshotAs(OutputType.BYTES);
   }
 }
