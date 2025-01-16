@@ -16,12 +16,12 @@ public class IssueTest {
     SelenideLogger .addListener("allure", new AllureSelenide());
     open("https://github.com/");
     $(".header-search-button").click();
-    $("#query-builder-test").sendKeys("AliceIvanova/HW9");
+    $("#query-builder-test").sendKeys("AliceIvanova/HW10");
     $("#query-builder-test").submit();
 
-    $(linkText("AliceIvanova/HW9")).click();
+    $(linkText("AliceIvanova/HW10")).click();
     $("#issues-tab").click();
-    $(".container-md").shouldHave(Condition.text("Welcome to issues!"));
+    $(".mt-4").shouldHave(Condition.text("Issue of HW10"));
   }
 
 }

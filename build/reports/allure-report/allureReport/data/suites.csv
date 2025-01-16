@@ -1,3 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Sat Jan 11 22:21:20 MSK 2025","Sat Jan 11 22:22:31 MSK 2025","71198","","IssueTest","","IssueTest","openStarPage","openStarPage()",""
-"passed","Mon Jan 13 15:09:26 MSK 2025","Mon Jan 13 15:09:41 MSK 2025","14583","","IssueTest","","IssueTest","testIssueSearch","testIssueSearch()",""

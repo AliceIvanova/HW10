@@ -11,12 +11,12 @@ import static org.openqa.selenium.By.linkText;
 
 public class WebStepsTest {
   private static final String searchField="#query-builder-test";
-  private static final String repository="AliceIvanova/HW9";
-  private static final String wlc="Welcome to issues!";
+  private static final String repository="AliceIvanova/HW10";
+  private static final String wlc="Issue of HW10";
   private static final String issuesTab="#issues-tab";
-  private static final String containerText=".container-md";
+  private static final String containerText=".mt-4";
   private static final String clickButton=".header-search-button";
-  @Step("Открытие стрицы")
+  @Step("Открытие страницы")
   void openMainPage(){
     open("https://github.com/");
   }
@@ -34,8 +34,8 @@ public class WebStepsTest {
   public void issueTab(){
     $(issuesTab).click();
   }
-  @Step("Приветственное сообщение")
-  public void welcomeText(){
+  @Step("Проверяем наличие Issue")
+  public void nameOfIssue(){
     $(containerText).shouldHave(Condition.text(wlc));
   }
   @Attachment(value = "Screenshot", type = "image/png", fileExtension = "png")
